@@ -1,0 +1,79 @@
+/* Settings */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #f1f1f1;
+  margin: 20px;
+}
+
+.first-list,
+.second-list,
+.third-list {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.first-list li,
+.second-list li,
+.third-list li {
+  color: white;
+  border: #a020f0 solid 1px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+/* First List Settings */
+
+/* first-child */
+.first-list li:first-child {
+  background-color: darkblue;
+}
+/* last-child */
+.first-list li:last-child {
+  background-color: darkblue;
+}
+/* nth-child */
+.first-list li:nth-child(2) {
+  background-color: blue;
+}
+.first-list li:nth-child(3) {
+  background-color: blue;
+}
+.first-list li:nth-child(4) {
+  background-color: blue;
+}
+
+/* Second List Settings */
+
+/* nth-child even */
+.second-list li:nth-child(even) {
+  background-color: black;
+}
+
+/* odd */
+.second-list li:nth-child(odd) {
+  background-color: blue;
+}
+
+/* Third List Settings */
+.third-list li {
+  background-color: black;
+}
+
+.third-list li:not(:first-child, .third-list-not) {
+  background-color: black;
+}
+
+.third-list li:first-child {
+  background-color: blue;
+}
+
+.third-list li:nth-child(3) {
+  background-color: blue;
+}
+.third-list li:last-child {
+  background-color: blue;
+}
